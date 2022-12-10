@@ -1,0 +1,38 @@
+.grid_container{
+    display: grid;
+    grid-template-columns:repeat(7,1fr);
+    
+    font-size:1.3vw ;
+}
+.gridItem{
+      border: 0.1px dotted  #d3d3d3;
+      padding: 7px 0 0 7px ;
+    
+      height: 12vh;
+      font-size: 1vw;
+      color: #6b6666;
+      
+}
+.gridItem.today {
+   
+    background-color: #f0eeee;    
+}
+.name_event{
+    padding-top: 5px;
+    font-size:1.3vw ;
+    font-weight: 700;
+    color: black;
+}
+.guess{
+    display: flex;
+    padding-top: 5px;
+   
+}
+.not_found{
+   
+    padding: 7px 0 0 7px ;
+        width: 100%;
+      height: 12vh;
+      font-size: 1vw;
+      color: red;
+}

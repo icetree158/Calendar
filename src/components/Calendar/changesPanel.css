@@ -1,0 +1,76 @@
+.wrapper_change{
+    position: relative;
+}
+.change_panel_backgrund{
+   
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background: #fafafa;
+    height: calc(16px + 10vh);
+    position: absolute;
+    z-index: 1;
+    border-bottom: 2px solid #989898;
+}
+.change_panel_container {
+     
+    display: flex;
+   
+    justify-content:space-between;
+    align-items: flex-end;
+    height: 10vh;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+   
+  
+    
+   
+}
+
+
+.change_button {
+    background-color: #0076cd;
+    border: none;
+    border-radius: 2px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    height: 4vh;
+    width: 5vw;
+    padding: 5px;
+    font-size: 0.9vw;
+    text-shadow: 0.5px 0.5px 0.5px #000;
+    cursor: pointer;
+
+
+}
+
+.butt_search {
+
+    height: 25px;
+    width: 25px;
+    border: none;
+    background: none;
+   
+
+}
+
+.search_input {
+    border-radius: 3px;
+    border: 1px solid #989898;
+    height: 3vh;
+    
+}
+
+.serchImg {
+    fill: #989898
+}
+
+::placeholder {
+
+    font-size: 0.7em;
+}
+.gridItem.active{
+    background-color:rgb(201,235,255);
+}

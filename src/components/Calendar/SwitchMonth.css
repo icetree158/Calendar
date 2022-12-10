@@ -1,0 +1,54 @@
+
+/* Buttons */
+
+.switch_month_butt {
+    width: 2vw;
+    height: 3vh;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    cursor: pointer;
+}
+
+
+
+.butt_day {
+    background: none;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+.switch_month_butt.left {
+    background: url('../../assets/left-svgrepo-com.png') no-repeat;
+    background-size: 50%;
+    background-position:50%;
+
+}
+
+.switch_month_butt.right {
+    background: url('../../assets/right-svgrepo-com.png') no-repeat;
+    background-size: 50%;
+    background-position:50%;
+}
+/* text */
+.month_year{
+    margin: 0 6px;
+    font-size: 1.3em;
+    font-weight: 600 ;
+    
+    width: 6.5rem;
+}
+
+
+
+
+
+
+
+
+.swich_mont_container{
+    display: flex;
+    margin-bottom: 20px;
+}
