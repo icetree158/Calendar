@@ -20,4 +20,8 @@
 .input_add_event{
     margin: 10px 0 20px;
 }
-
+.err_mes{
+    padding-top: 5px;
+    align-self: center;
+    color:red;
+}

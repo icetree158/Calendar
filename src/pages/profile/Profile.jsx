@@ -7,7 +7,7 @@ export default function Profile() {
     const isAuth = useSelector((e) => e.auth.isAuth)
     const navigate = useNavigate()
     const eventData=useSelector((e)=>e.user.event)
-    console.log(eventData)
+ 
     useEffect(() => {   
         if (!isAuth) {
             navigate('/login')
@@ -25,7 +25,7 @@ export default function Profile() {
             <div className='events_container'>
                 {eventData.length===0?<Link className='link_calendar' to={'/calendar'}>У вас нету событий.  Хотите что-то добавить? </Link>
                 :eventData.map((e,i)=>{
-                    return <div className='event_item'>
+                    return <div key={e.dateEvent} className='event_item'>
                         <span className='span_event'>{i+1}</span>
                         <span className='span_event'>{e.nameEvent}</span>
                         <span className='span_event'>{e.descriptionEvent}</span>

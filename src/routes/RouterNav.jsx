@@ -6,6 +6,7 @@ import Calendar from '../pages/Calendar/Calendar';
 
 import Profile from '../pages/profile/Profile';
 import Main from '../pages/main/Main';
+import Info from '../pages/info/Info';
 
 
 
@@ -16,11 +17,12 @@ export default function RouterNav() {
             <Routes>
                 
                 <Route path='/login' element={<Login />} />
-                
+                  
                 <Route path='/' element= {<NavBar/>} >
                 <Route index element={<Main/>}/>
                     <Route path='profile' element={<Profile/>}/>
-                    <Route path='calendar' element={<Calendar/>}/>      
+                    <Route path='calendar' element={<Calendar/>}/>  
+                    <Route path='info' element={<Info/>}/>      
                                    
                 </Route>
             </Routes>

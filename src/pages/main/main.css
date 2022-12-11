@@ -1,0 +1,22 @@
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.link_calend{
+    text-decoration: none;
+    
+    background-color: #0076cd;
+    border:none;
+    
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    
+    padding: 10px;
+    font-size: 2vw;
+    text-shadow: 0.5px 0.5px 0.5px #000;
+    cursor: pointer;
+
+}

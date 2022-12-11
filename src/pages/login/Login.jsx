@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router'
+import { Link } from 'react-router-dom'
 import { setAuth } from '../../store/authStore'
 import'./login.css'
 export default function Login() {
@@ -29,6 +30,7 @@ useEffect(()=>{
         
     <div className='login_container'>
         <form className='form_login'>
+          <Link className='link_home' to={'/'}>На главную</Link>
             <h1 className='tittle_form'>Авторизация</h1>
             <label className='span_login'>Введите логин</label>
             <input ref={log} className='input_login' placeholder='Введите логин...'/>

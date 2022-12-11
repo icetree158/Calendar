@@ -69,6 +69,11 @@
     font-size: 2vh;
 
 }
+.link_home{
+    text-decoration: none;
+    font-size: 3vh;
+    color:#0076cd;
+}
 
 
 @media (max-width: 1200px) and (min-width:949px) {
