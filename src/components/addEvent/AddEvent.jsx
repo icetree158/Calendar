@@ -8,25 +8,24 @@ export default function AddEvent({ setModalActive }) {
   const [descriptionEvent, setDescriptionEvent] = useState('')
   const [dateEvent, setDateEvent] = useState('')
   const [errMess, setErrMess] = useState('')
-  const events=useSelector((e)=>e.user.event)
-  
-   
+  const events = useSelector((e) => e.user.event)
+
+
 
   const dispatch = useDispatch()
 
   const addNewEvent = () => {
-    
-    if (nameEvent.length === 0 || descriptionEvent.length === 0 || dateEvent.length === 0) {
-      setErrMess('Есть пустые поля')
-     
-       
-      
-    }
-    if(events.find(e=> e.dateEvent===dateEvent)){
+    if (events.find(e => e.dateEvent === dateEvent)) {
       setErrMess('Эта дата занята')
+      if (nameEvent.length === 0 || descriptionEvent.length === 0 || dateEvent.length === 0) {
+        setErrMess('Есть пустые поля')
+
+
+      }
+
 
     }
-     else {
+    else {
       dispatch(addEvent({ nameEvent: nameEvent, descriptionEvent: descriptionEvent, dateEvent: dateEvent }))
       setModalActive(false)
       setClear()
