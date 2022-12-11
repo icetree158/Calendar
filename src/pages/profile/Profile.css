@@ -1,0 +1,29 @@
+.profile_container{
+    
+    padding-top: 20px;
+}
+.avatar_img{
+    height: 30px;
+    width: 30px;
+    border: 50%;
+    margin-right: 40px;
+}
+.events_container{
+    padding-top: 20px;
+}
+.link_calendar{
+    text-decoration: none;
+}
+.event_item{
+    padding: 5px ;
+    border: 1px solid black;
+    border-radius:7px ;
+    margin-top: 10px;
+    
+}
+.span_event{
+    margin-right: 10px;
+}
+.nick_name{
+    font-size:5vh;
+}

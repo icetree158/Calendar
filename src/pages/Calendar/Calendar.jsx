@@ -23,6 +23,7 @@ export default function Calendar() {
   const navigate = useNavigate()
 
   useEffect(() => {
+    console.log(isAuth)
     if (!isAuth) {
       navigate('/login')
     }

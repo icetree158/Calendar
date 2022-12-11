@@ -6,12 +6,6 @@ import './calendarGrid.css'
 export default function GridSearch({ inputVal }) {
   const usersEvent = useSelector((e) => e.user.event)
 
-  /*  */
-
-
-  // e.nameEvent.find(inputVal)
-  // e.descriptionEvent
-  // e.dateEvent
 
   const gridValue = () => {
     const arrData = usersEvent.filter((e) => e.nameEvent.includes(inputVal) || e.descriptionEvent.includes(inputVal) || e.dateEvent.includes(inputVal))

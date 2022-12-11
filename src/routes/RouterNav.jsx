@@ -16,12 +16,12 @@ export default function RouterNav() {
             <Routes>
                 
                 <Route path='/login' element={<Login />} />
-                <Route path='/calendar' element={<Calendar/>}/>      
+                
                 <Route path='/' element= {<NavBar/>} >
                 <Route index element={<Main/>}/>
                     <Route path='profile' element={<Profile/>}/>
-                    
-                
+                    <Route path='calendar' element={<Calendar/>}/>      
+                                   
                 </Route>
             </Routes>
         </>
