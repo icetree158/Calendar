@@ -14,7 +14,7 @@ useEffect(()=>{
   if(isAuth){
     navigate('/')
   }
-})
+},[isAuth,navigate])
 
 
     const checkOption=()=>{

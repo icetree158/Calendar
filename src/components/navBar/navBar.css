@@ -1,0 +1,26 @@
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #848482;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    height: 10vh;
+    align-items: center;
+}
+.name_user{
+    font-size: 3.8vh;
+}
+.nav_link{
+    text-decoration: none;
+    font-size: 3.8vh;
+    color:black;
+    border: 1px solid  #1616129d;
+    padding: 4px;
+    border-radius:5px ;
+    background: none;
+   
+}
+.nav_link.active{
+    
+    background-color: #FFB6C1;
+}
