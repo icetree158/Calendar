@@ -15,17 +15,18 @@ export default function AddEvent({ setModalActive }) {
   const dispatch = useDispatch()
 
   const addNewEvent = () => {
-    if (events.find(e => e.dateEvent === dateEvent)) {
-      setErrMess('Эта дата занята')
+    
       if (nameEvent.length === 0 || descriptionEvent.length === 0 || dateEvent.length === 0) {
         setErrMess('Есть пустые поля')
-
-
+        return 0;
+        
       }
 
-
+      if (events.find(e => e.dateEvent === dateEvent)) {
+        setErrMess('Эта дата занята')
     }
-    else {
+    else
+     {
       dispatch(addEvent({ nameEvent: nameEvent, descriptionEvent: descriptionEvent, dateEvent: dateEvent }))
       setModalActive(false)
       setClear()
